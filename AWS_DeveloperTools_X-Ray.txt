@@ -1,0 +1,33 @@
+# Developer Tools
+
+1. AWS X-Ray 
+
+AWS X-Ray makes it easy for developers to analyze the behavior of their distributed applications by providing request tracing, exception collection, and profiling capabilities.
+#---------------------------------------------------------------#
+
+AWS X-Ray traces requests as they move through your applications.
+
+It collects data and makes it available to view, filter, and sort.
+
+You can then use the data to gain insights and identify potential optimizations to make inside your application.
+
+X-Ray concepts:
+a. Segments - Data about the work done by your application(Can include data on: the request, the response, subsegments, and issues)
+b. Subsegments - A more granular view of data inside of segments
+c. Service Graph - A JSON document that contains information about how your application's services and resources interact(this can create a visualized service map)
+d. Traces - Trace ID's track requests as they go through your applications:
+	a. The first X-Ray supported service to interact with a request adds an HTTPS trace ID header
+	b. The trace ID header propagates downstream to track the request as it moves through the system
+e. Sampling - X-Ray applies an alogorithm to sample request data but you can configure the frequncy of sampling(e.g. to reduce it on high-volume or lower-volume requests)
+f. Tracing Header - Examples : X-Amzn-Trace-id: Root=1-.5759e988;Sampled=1
+g. Filter Expressions - used in the X-Ray console to search through your traces by different characteristics(e.g. Specific trace ids, partial URL paths, annotations)
+h. Annotations and Metadata - Additional way to store searchable annotations and non-searchable metadata data about traces.
+i. Errors, Faults, and Exceptions - X-Ray tracks application errors and categorizes them as:
+	a. Error - Client errors(400 series errors)
+	b. Fault - Server faults(500 series errors)
+	c. Throttle - Throttling errors(429 too many requests)
+
+#---------------------------------------------------------------#	
+
+
+#---------------------------------------------------------------#

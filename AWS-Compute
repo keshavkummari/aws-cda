@@ -1,0 +1,60 @@
+Compute
+
+1. AWS Batch
+2. Amazon EC2
+3. Amazon ECR
+4. Amazon ECS
+5. Amazon EKS
+6. AWS Elastic Beanstalk
+7. AWS Lambda
+8. Amazon Lightsail
+9. AWS Serverless Application Repository
+10. Amazon VPC
+
+
+1. AWS Batch
+AWS Batch enables you to run batch computing workloads on the AWS Cloud. 
+Batch computing is a common way for developers, scientists, and engineers to access large amounts of compute resources. 
+AWS Batch removes the undifferentiated heavy lifting of configuring and managing the required infrastructure.
+
+2. Amazon EC2
+Amazon Elastic Compute Cloud (Amazon EC2) is a web service that provides resizeable computing capacity—literally, servers in Amazon's data centers—that you use to build and host your software systems.
+
+3. Amazon ECR
+Amazon Elastic Container Registry (Amazon ECR) is a fully managed Docker container registry that makes it easy for developers to store, manage, and deploy Docker container images.
+
+4. Amazon ECS
+Amazon Elastic Container Service (Amazon ECS) is a highly scalable, fast, container management service that makes it easy to run, stop, and manage Docker containers on a cluster of Amazon EC2 instances.
+
+5. Amazon EKS
+Amazon Elastic Container Service for Kubernetes (Amazon EKS) is a managed service that makes it easy for you to run Kubernetes on AWS without needing to install and operate your own Kubernetes clusters.  
+
+6. AWS Elastic Beanstalk
+With AWS Elastic Beanstalk, you can quickly deploy and manage applications in the AWS Cloud without worrying about the infrastructure that runs those applications. 
+AWS Elastic Beanstalk reduces management complexity without restricting choice or control. 
+You simply upload your application, and AWS Elastic Beanstalk automatically handles the details of capacity provisioning, load balancing, scaling, and application health monitoring.
+
+7. AWS Lambda
+With AWS Lambda, you can run code without provisioning or managing servers. 
+You pay only for the compute time you consume—there’s no charge when your code isn’t running. 
+You can run code for virtually any type of application or backend service—all with zero administration. 
+Just upload your code and Lambda takes care of everything required to run and scale your code with high availability. 
+You can set up your code to automatically trigger from other AWS services or call it directly from any web or mobile app.
+
+8. Amazon Lightsail
+Amazon Lightsail is the easiest way to get started with AWS for developers who just need virtual private servers. 
+Lightsail includes everything you need to launch your project quickly – a virtual machine, SSD-based storage, data transfer, DNS management, and a static IP – for a low, predictable price.
+
+9. AWS Serverless Application Repository
+With AWS Serverless Application Repository, you can quickly find and deploy serverless applications in the AWS Cloud. 
+You can browse applications by category, or search for them by name, publisher, or event source. 
+To use an application, you simply select it, configure required fields, and deploy it with a few clicks. 
+
+As a serverless application developer, you can also easily publish applications, sharing them across teams and organizations and with other AWS users. 
+To publish serverless applications, you can use the AWS Management Console, AWS CLI, or AWS SDKs to upload the code, along with a simple manifest file.  
+
+10. Amazon VPC
+Amazon Virtual Private Cloud (Amazon VPC) enables you to launch Amazon Web Services (AWS) resources into a virtual network that you've defined. 
+This virtual network closely resembles a traditional network that you'd operate in your own data center, with the benefits of using the scalable infrastructure of AWS.
+
+

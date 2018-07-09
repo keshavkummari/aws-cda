@@ -1,0 +1,39 @@
+Storage
+
+1. Amazon EBS
+2. Amazon EFS
+3. Amazon Glacier
+4. Amazon S3
+5. AWS Snowball
+6. AWS Storage Gateway
+
+1. Amazon EBS
+Amazon Elastic Block Store (Amazon EBS) provides block level storage volumes for use with EC2 instances. 
+EBS volumes are highly available and reliable storage volumes that can be attached to any running instance that is in the same Availability Zone. 
+EBS volumes that are attached to an EC2 instance are exposed as storage volumes that persist independently from the life of the instance. 
+With Amazon EBS, you pay only for what you use. 
+
+2. Amazon EFS
+Amazon EFS provides file storage for your Amazon EC2 instances. 
+With Amazon EFS, you can create a file system, mount the file system on your EC2 instances, and then read and write data from your EC2 instances to and from your file system.
+
+3. Amazon Glacier
+Amazon Glacier is a storage service optimized for infrequently used data, or "cold data." 
+The service provides durable and extremely low-cost storage with security features for data archiving and backup. 
+With Amazon Glacier, you can store your data cost effectively for months, years, or even decades. 
+Amazon Glacier enables you to offload the administrative burdens of operating and scaling storage to AWS, 
+so you don't have to worry about capacity planning, hardware provisioning, data replication, hardware failure detection and recovery, or time-consuming hardware migrations. 
+
+4. Amazon S3
+Amazon Simple Storage Service (Amazon S3) is storage for the Internet. 
+You can use Amazon S3 to store and retrieve any amount of data at any time, from anywhere on the web. 
+You can accomplish these tasks using the simple and intuitive web interface of the AWS Management Console.
+
+5. AWS Snowball
+AWS Snowball is a service for customers who want to transport terabytes or petabytes of data to and from AWS, 
+or who want to access the storage and compute power of the AWS Cloud locally and cost effectively in places where connecting to the internet may not be an option.  
+
+6. AWS Storage Gateway
+AWS Storage Gateway is a service that connects an on-premises software appliance with cloud-based storage to provide seamless and secure integration 
+between your on-premises IT environment and the AWS storage infrastructure in the cloud.
+

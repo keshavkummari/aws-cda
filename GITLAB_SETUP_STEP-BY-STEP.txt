@@ -1,0 +1,91 @@
+STEP-1 : Download, Install & Configure Gitlab-CI, Gitlab-Runner on Linux:
+
+Prerequisites : 
+
+Environment Type : t2.medium
+RAM				 : 4-GB
+PROCESSOR    	 : 2 Core (2 vCPUs, 2.3 GHZ)
+HDD				 : 8GB
+O/S  			 : Any Linux Distribution or Windows 
+
+
+# yum -y install curl policycoreutils openssh-server openssh-clients postfix
+
+# systemctl start sshd
+
+# systemctl start postfix
+
+# systemctl enable sshd
+
+# systemctl enable postfix
+
+STEP-2 : GitLab provides an installer for adding the GitLab CE repository. 
+Download the installer with curl and run the script (as shown below) to add new GitLab CE repository.
+
+curl -sS https://packages.gitlab.com/install/repositories/gitlab/gitlab-ce/script.rpm.sh | sudo bash
+
+curl -L https://packages.gitlab.com/install/repositories/runner/gitlab-runner/script.rpm.sh | sudo bash
+
+STEP-3 : Now install GitLab with the following yum command.
+
+# yum -y install gitlab-ce
+
+STEP-4 : Configure Firewalld : 
+
+# yum -y install firewalld
+
+Start firewalld and enable it to run automatically at boot time with systemctl commands as shown below.
+
+# systemctl start firewalld
+
+# systemctl enable firewalld
+
+STEP-5 : Next, open new ports for our services. We will open SSH, HTTP and HTTPS ports for our GitLab config. Run firewall-cmd commands below to open the ports.
+
+# firewall-cmd --permanent --add-service ssh
+
+# firewall-cmd --permanent --add-service http
+
+# firewall-cmd --permanent --add-service https
+
+# firewall-cmd --reload
+
+# firewall-cmd --list-all
+
+STEP-6 : Reset GitLab root password : 
+
+http://vcs.cloudcicd.org/
+
+Now you can log in to the GitLab dashboard with default user 'root' and your own password.
+
+STEP-7 :  Add SSH Key:
+
+# ssh-keygen
+
+And you will get two keys in ~/.ssh/ directory. 'id_rsa' would be your private key and 'id_rsa.pub' would be your public key.
+
+Next, come back to the Web browser, and click on the 'SSH Key' tab. Copy content of 'id_rsa.pub' file and paste to the key box, and click 'Add Key'.
+
+STEP-8 : Download, Install & Configure Gitlab-Runner : 
+
+# yum install gitlab-runner
+
+# gitlab-runner status
+
+STEP-9 : Register the Gitlab-Runner :
+
+# gitlab-runner register
+
+Copy the URL from vcs.cloudcicd.org from ProjectName(i.e. "test")>>CI/CD>>Runners settings>>
+
+Specify the following URL during the Runner setup: http://vcs.cloudcicd.org/
+
+Use the following registration token during setup: EtSQ9QSzxaAgMdkLBys2
+
+Start the Runner!
+
+# gitlab-runner start
+
+STEP-10 :  Go to Gitlab-CI http://vcs.cloudcicd.org/ & and navigate to above mentioned project i.e. "test".
+
+Now, Gitlab-CI & Gitlab-Runner are created successfully!
